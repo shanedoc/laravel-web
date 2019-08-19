@@ -1,8 +1,9 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: xk
- * Date: 2019-08-11
- * Time: 21:33
+ * @return mixed
  */
+function route_class(){
+    return str_replace('.','-',\Illuminate\Support\Facades\Route::currentRouteName());
+}
 
